@@ -1,0 +1,94 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  background-color: #FFFAFA;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Ropa Sans", sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #045aaa;
+  color: rgb(255, 255, 255);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #045aaa;
+  color: rgb(0, 0, 0);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: flex;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.topnav-left{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.topbar{
+  display: flex;
+  background-color: #045aaa;
+  height: 50px;
+  text-shadow: #000000;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20 10px;
+}
+.solid{
+  border-top: 1px solid #000000;
+}
+.solidtop{
+  border-top: 5px solid #045aaa;
+}
+.link1{
+  margin-top: -2px;
+  padding: 0 0px;
+  display: flex;
+  align-content: space-evenly;
+  width: 1350px;
+  flex-direction: row-reverse;
+  font-family: "Ropa Sans", sans-serif;
+  color: azure;
+}
+
+.ropa-sans-regular {
+  font-family: "Ropa Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap')
+
+
+
+
