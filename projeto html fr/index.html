@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Lava Rápido Auto Nível</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+  <script>!function (e) { "undefined" == typeof module ? this.charming = e : module.exports = e }(function (e, n) { "use strict"; n = n || {}; var t = n.tagName || "span", o = null != n.classPrefix ? n.classPrefix : "char", r = 1, a = function (e) { for (var n = e.parentNode, a = e.nodeValue, c = a.length, l = -1; ++l < c;) { var d = document.createElement(t); o && (d.className = o + r, r++), d.appendChild(document.createTextNode(a[l])), n.insertBefore(d, e) } n.removeChild(e) }; return function c(e) { for (var n = [].slice.call(e.childNodes), t = n.length, o = -1; ++o < t;)c(n[o]); e.nodeType === Node.TEXT_NODE && a(e) }(e), e });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="nav/footer.css">
+  <link rel="stylesheet" href="jrlx/style.css">
+  <link rel="stylesheet" href="jrlx/texto.css">
+  <link rel="stylesheet" href="jrlx/hover.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img class="logo-bar" src="img/logof.png" alt="">
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="sobre/sobre.html" class="nav-link">O Lava Rápido</a></li>
+          <li class="nav-item"><a href="servicos/servico.html" class="nav-link">Serviços</a></li>
+          <li class="nav-item"><a href="contato/contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="sobre/sobre.html" class="nav-link">O Lava Rápido</a></li>
+        <li class="nav-item"><a href="servicos/servico.html" class="nav-link">Serviços</a></li>
+        <li class="nav-item"><a href="contato/contato.html" class="nav-link">Contato</a></li>
+      </ul>
+
+
+    </div>
+  </header>
+
+  <script src="assets/js/script.js"></script>
+
+
+  <section class="intro">
+
+    <div class="swiper-container slideshow">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+          <div class="slide-image"> <img class="tsccx" src="img/tsccx.png" alt=""></div>
+          <span class="slide-title">Estética Automotiva</span>
+
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="slide-image"> <img class="cleanx" src="img/cleanx.png" alt=""></div>
+          <span class="slide-title">Seu carro limpo em até 30 minutos</span>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="slide-image"> <img class="repairr" src="img/repairr.png" alt=""></div>
+          <span class="slide-title">Lavagem de Motores</span>
+        </div>
+      </div>
+
+      <div class="slideshow-pagination"></div>
+
+      <div class="slideshow-navigation">
+        <div class="slideshow-navigation-button prev"><span class="fas fa-chevron-left"></span></div>
+        <div class="slideshow-navigation-button next"><span class="fas fa-chevron-right"></span></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="containertxt">
+    <div>
+      <p class="titlexd">QUALIDADE</p>
+      <i class="fa fa-thumbs-up fa-2x" aria-hidden="true" style="color: #FFDE59; font-size: 2rem; "></i>
+      <p class="text">Buscamos a excelência nos cuidados de um &nbsp bem tão valorizado pelos brasileiros:
+        o carro.</p>
+    </div>
+    <div>
+      <p class="titlexd">TRADIÇÃO</p>
+      <i class="fa fa-car fa-2x" aria-hidden="true" style="color: #FFDE59; font-size: 2rem;"></i>
+      <p class="text">Nosso posto funciona há 10 anos como
+        lava rápido, o que faz dele o mais tradicional da cidade.</p>
+
+    </div>
+    <div>
+      <p class="titlexd">PROMOÇÕES</p>
+      <i class="fa fa-money-check-alt fa-2x" aria-hidden="true" style="color: #FFDE59; font-size: 2rem;"></i>
+      <p class="text">Fique atento nas promoções!!! A cada 10 lavagens, ganhe uma grátis.</p>
+
+    </div>
+  </div>
+
+  <div class="show_hover">
+    <figure class="text-hover-img" tabindex="0">
+      <img src="img/2.png" alt="" />
+      <figcaption>
+        <h1>LEVA E TRAZ</h1>
+        <p>Fazemos delivery, entregamos na sua casa o seu carro, basta entrar em contato conosco e marcar um horário!
+        </p>
+      </figcaption>
+    </figure>
+
+    <figure class="text-hover-img" tabindex="0">
+      <img src="img/1.png" alt="" />
+      <figcaption>
+        <h1>LAVAGEM RÁPIDA</h1>
+        <p>Seu carro limpo em até 30 minutos, em um piscar de olhos seu carro estará brilhando!</p>
+      </figcaption>
+    </figure>
+
+  </div>
+  <div class="show_hover2">
+    <figure class="text-hover-img" tabindex="0">
+      <img src="img/4.png" alt="" />
+      <figcaption>
+        <h1>ESTÉTICA AUTOMOTIVA</h1>
+        <p>Seu carro está precisando de um check-up? Fazemos todo tipo de limpeza interna que seu carro precisa!</p>
+      </figcaption>
+    </figure>
+
+    <figure class="text-hover-img" tabindex="0">
+      <img src="img/3.png" alt="A small fluffy dog" />
+      <figcaption>
+        <h1>LAVAGEM DE MOTOR</h1>
+        <p>Está precisando de uma geral no seu motor? Deixaremos ele como novo novamente.</p>
+      </figcaption>
+    </figure>
+  </div>
+
+
+
+  <footer>
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <img src="logof.png" alt="">
+        <p>Lava Rápido Auto nível</p>
+
+        <div id="footer_social_media">
+          <a href="https://www.instagram.com/lavarapidoautonivel22?igsh=MTM3bWVsMXpjY294aw==" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.instagram.com/lavarapidoautonivel22?igsh=MTM3bWVsMXpjY294aw==" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="https://wa.me/5511958927535" class="footer-link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <h3>O Lava Rápido</h3>
+        </li>
+        <li>
+          <a href="index.html" class="footer-link">Home</a>
+        </li>
+        <li>
+          <a href="sobre/sobre.html" class="footer-link">Sobre</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Produtos</h3>
+        </li>
+        <li>
+          <a href="servicos/servico.html" class="footer-link">Serviços</a>
+        </li>
+        <li>
+          <a href="contato/contato.html" class="footer-link">Contato</a>
+        </li>
+      </ul>
+
+      <div id="footer_subscribe">
+        <h3>Entre em Contato</h3>
+
+        <p>
+          Cadastre seu e-mail para ficar ligado nas novidades e promoções.
+        </p>
+
+        <div id="input_group">
+          <input type="email" id="email">
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer_copyright">
+      &#169
+      2024 Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <div class="float-whatsapp float-on">
+    <div>
+      <a target="_blank" href="https://wa.me/5511958927535"> <span><svg width="30" height="30" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg" data-svg="whatsapp" style="fill: #fff">
+            <path
+              d="M16.7,3.3c-1.8-1.8-4.1-2.8-6.7-2.8c-5.2,0-9.4,4.2-9.4,9.4c0,1.7,0.4,3.3,1.3,4.7l-1.3,4.9l5-1.3c1.4,0.8,2.9,1.2,4.5,1.2 l0,0l0,0c5.2,0,9.4-4.2,9.4-9.4C19.5,7.4,18.5,5,16.7,3.3 M10.1,17.7L10.1,17.7c-1.4,0-2.8-0.4-4-1.1l-0.3-0.2l-3,0.8l0.8-2.9 l-0.2-0.3c-0.8-1.2-1.2-2.7-1.2-4.2c0-4.3,3.5-7.8,7.8-7.8c2.1,0,4.1,0.8,5.5,2.3c1.5,1.5,2.3,3.4,2.3,5.5 C17.9,14.2,14.4,17.7,10.1,17.7 M14.4,11.9c-0.2-0.1-1.4-0.7-1.6-0.8c-0.2-0.1-0.4-0.1-0.5,0.1c-0.2,0.2-0.6,0.8-0.8,0.9 c-0.1,0.2-0.3,0.2-0.5,0.1c-0.2-0.1-1-0.4-1.9-1.2c-0.7-0.6-1.2-1.4-1.3-1.6c-0.1-0.2,0-0.4,0.1-0.5C8,8.8,8.1,8.7,8.2,8.5 c0.1-0.1,0.2-0.2,0.2-0.4c0.1-0.2,0-0.3,0-0.4C8.4,7.6,7.9,6.5,7.7,6C7.5,5.5,7.3,5.6,7.2,5.6c-0.1,0-0.3,0-0.4,0 c-0.2,0-0.4,0.1-0.6,0.3c-0.2,0.2-0.8,0.8-0.8,2c0,1.2,0.8,2.3,1,2.4c0.1,0.2,1.7,2.5,4,3.5c0.6,0.2,1,0.4,1.3,0.5 c0.6,0.2,1.1,0.2,1.5,0.1c0.5-0.1,1.4-0.6,1.6-1.1c0.2-0.5,0.2-1,0.1-1.1C14.8,12.1,14.6,12,14.4,11.9">
+            </path>
+          </svg></span>
+        <span class="float-whatsapp-text"> WhatsApp </span>
+      </a>
+    </div>
+  </div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

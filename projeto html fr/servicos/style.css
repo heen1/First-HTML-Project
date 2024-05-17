@@ -1,0 +1,413 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@keyframes entradaDaDireita {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes entradaDaEsquerda {
+    from {
+      transform: translateX(-100%); 
+    }
+    to {
+      transform: translateX(0); 
+    }
+  }
+
+header {
+    background-color: #0c0d0f;
+    box-shadow: 0px 3px 10px #464646;
+}
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.servicos {
+    height: 170px;
+    width: 510px ;
+    border: 2px solid yellow;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.746);
+    position: relative;
+    animation: entradaDaDireita 1s ease-in-out;
+}
+.servicosL {
+    height: 170px;
+    width: 510px ;
+    border: 2px solid yellow;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.746);
+    position: relative;
+    animation: entradaDaEsquerda 1s ease-in-out;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+.servicos:hover,
+.servicosL:hover {
+    transform: scale(1.05);
+}
+.foto img {
+    height: 150px;
+    width: 240px;
+    background-color: blue;
+    margin: 10px 0px 0px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.descServicos {
+    margin: 10px 0px 0px 10px;
+    color: white;
+}
+.titulo {
+    font-size: 20px;
+    font-weight:500;
+}
+.subTitulo {
+    margin-top: 20px;
+    font-weight:500;
+}
+.botao {
+    width: 95px;
+    height: 28px;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    transition: all 0.3s ease;
+}
+.botaox {
+    width: 95px;
+    height: 28px;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.areaServicos {
+    display: flex;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+:root {
+    --color-neutral-0: #171717;
+    --color-neutral-10: #0c0d0f;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-bar {
+    width: 100px;
+}
+.logo h1 {
+    color: #fff;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item {
+    margin: 0 15px;
+    font-size: 2rem;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.mobile-menu-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+.footer-link {
+    text-decoration: none;
+}
+
+
+
+#areaDeServicos {
+    padding: 0px 110px 20px 230px;
+    background-image: url("imgg/img9opacity.jpg");
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-position:center;
+    background-size: cover;
+}
+
+#tituloServicos {
+    height: 65px;
+    width: auto;
+    background-color: black;
+    padding: 0px 110px;
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+#serv {
+    color: white;
+    margin-top: 18px;
+    font-size: 30px;
+}
+#botoesHome {
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+}
+#botoesHome:hover {
+    cursor: pointer;
+    border-bottom: 2px solid yellow;
+    color: yellow;
+    font-weight: bold;
+}
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook {
+    background-color: #4267b3;
+}
+#whatsapp {
+    background-color: #25d366;
+}
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+#input_group button:hover {
+    opacity: 0.8;
+}
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+#h6{
+    font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+    #areaDeServicos {
+        display: block;
+        background-position: center;
+        background-size: cover;
+        padding: 0px;
+        margin-top: -1rem;
+        margin-right: 0px;
+        background-color: black;
+        margin-bottom: -1rem;
+    }
+    .servicos {
+        width: 280px;
+        height: 150px;
+        margin: 10px;
+        margin-left: 10px;
+    }
+    .servicosL {
+        width: 280px;
+        height: 150px;
+        margin: 10px;
+        margin-left: 10px;
+    }
+    .botao {
+        margin-top: 0.8rem;
+        width: 4.3rem;
+        font-size: 0.9rem;
+        height: 20px;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    .foto img {
+        width: 170px;
+        height: 120px;
+    }
+    h{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    #areaDeServicos {
+        padding: 0px 110px 20px 120px ;
+    }
+  }
+
+  @media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 2rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+ 
+    .titulo{
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .botaox{
+        width: 4.3rem;
+        font-size: 0.9rem;
+        height: 20px;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+}

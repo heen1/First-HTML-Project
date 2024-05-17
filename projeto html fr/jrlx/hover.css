@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.text-hover-img {
+  margin: 10px auto;
+  width: 25%;
+  min-width:220px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  transition: .5s;
+  border-radius: 30px;
+
+  img {
+    display: block;
+    object-fit: contain;
+    width: 102%;
+    border-radius: 30px;
+    filter: brightness(100%);
+    transition: .5s;
+    will-change: transform;
+  }
+  
+  figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    filter: blur(5px);
+    color: white;
+    opacity: 0;
+    transition: .5s;
+    width: 70%;
+    text-align: center;
+    
+    h1 {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      &::after {
+        content: " ";
+        width: 0%;
+        position: absolute;
+        border-bottom: 3px solid white;
+        left: 50%;
+        bottom: 0%;
+        transition: .5s;
+      }
+    }
+    
+    p {
+      line-height: 1.5em;
+    }
+  }
+}
+
+.text-hover-img:focus,
+.text-hover-img:hover {  
+  img {
+    z-index: -1;
+    filter: brightness(30%) blur(3px);
+    transform: scale(2);
+  }
+  
+  figcaption{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    filter: blur(0px);
+    z-index:1;
+    
+    h1::after {
+      width: 100%;
+      left: 0%;
+      bottom: -15%;
+    }
+  }
+}
+
+.show_hover{
+
+    display: flex;
+}
+.show_hover2{
+
+    display: flex;
+}
+
+@media screen and (max-width: 426px) {
+
+    .show_hover{
+        display: block;
+    }
+    .show_hover2{
+        display: block;
+    }
+
+    h1{
+      font-size: smaller;
+    }
+
+}

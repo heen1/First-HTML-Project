@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+.containertxt {  
+    display: grid;  
+    grid-gap: 15px;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(1, 100px); 
+    background-color: #0c0d0f; 
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.text {
+    font-size: 1.1rem;
+    font-family: "Ropa Sans", sans-serif;
+}
+.titlexd{
+
+    position: absolute;
+    margin-top: 0.3rem;
+}
+
+.fa-thumbs-up {
+    padding-left: 7.5rem;
+}
+.fa-car{
+    padding-left: 6.7rem;
+}
+.fa-money-check-alt{
+    padding-left: 8rem;
+}
+
+@media screen and (max-width: 426px) {
+
+    .fa{
+        padding-left: 15rem;
+    }
+}
+
+
+
+
+
+
+
+
